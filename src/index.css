@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&family=Mitr:wght@200;300;400;500;600;700&display=swap');
+
+/* Global styling */
+
+:root {
+  --default-font-family: "Mitr", sans-serif;
+  --default-font-weight: 400;
+  --default-font-style: normal;
+  --capitalized-font-family: "Mitr", sans-serif;
+  --capitalized-font-weight: 600;
+  --capitalized-font-style: normal;
+  --bg: #6E5C62;
+  --letters: #FAFAFF;
+  --key-board-n-letter-border: #4C4347;
+  --disabled-input: #615458;
+  --config-buttons: #B7AEB4;
+  --bg-config-modal: #312B2D;
+  --right-letter: #D3AD69;
+  --right-letter-high-constrast: #E36322;
+  --right-place: #3AA394;
+  --right-place-high-constrast: #0197F6;
+  --link: #CDB8ED;
+}
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--default-font-family);
+  font-weight: var(--default-font-weight);
+  font-style: var(--default-font-style);
+  background-color: var(--bg);
+  color: var(--letters);
+  font-size: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.capitalize {
+  font-family: var(--capitalized-font-family);
+  font-weight: var(--capitalized-font-weight);
+  font-style: var(--capitalized-font-style);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
