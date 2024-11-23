@@ -1,5 +1,10 @@
 const Dueto = () => {
-  return <h1>DUETO</h1>;
+  return (
+    <>
+      dueto page
+      <p>*futuro componente do jogo</p>
+    </>
+  );
 };
 
 export default Dueto;

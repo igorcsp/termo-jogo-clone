@@ -1,5 +1,5 @@
 const StatsModal = () => {
-  return <>StatsModal</>;
+  return <div>Estatísticas</div>;
 };
 
 export default StatsModal;

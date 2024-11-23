@@ -1,5 +1,5 @@
 const Word = () => {
-  return <>Word</>;
+  return <div>fdsfdsfds</div>;
 };
 
 export default Word;

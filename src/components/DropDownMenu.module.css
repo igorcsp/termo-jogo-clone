@@ -1,43 +1,106 @@
-.dropdown-container {
-    /* background-color: #222222; */
-    margin: 0;
-}
-
-.nav {
-    background-color: #222222;
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    flex-direction: column;
 }
 
-.links {
+.navroutes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dropdown-menu-bg);
+    padding: 15px 20px;
+
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.navroutes.open {
+    animation: slideDown 0.5s ease forwards;
+    pointer-events: auto;
+}
+
+.routes {
+    display: flex;
+    gap: 30%;
+}
+
+.route {
     text-decoration: none;
     color: var(--letters);
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .active {
     text-decoration: none;
     color: #585859;
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
-.dropdown-icon-button {
+.about-icon>img {
+    position: relative;
+    top: 3px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15%;
+    /* tem q botar uma responsividade aqui */
+}
+
+.menu>div {
+    display: flex;
+    gap: 3px;
+}
+
+.menu-btns {
     padding: 0;
     width: 27px;
     height: 27px;
     background: none;
     border: 2px solid var(--config-buttons);
     border-radius: 5px;
+    font-family: var(--default-font-family);
+    color: var(--config-buttons);
 }
 
-.dropdown-icon-img {
+.icon-imgs {
     width: 100%;
 }
 
-.links .about-icon>img {
-    width: 20%;
+/* animação de rotação do botão de dropdown */
+
+.dropdown-icon-button {
+    transition: transform 0.5s ease-in-out;
+}
+
+.dropdown-icon-button.open {
+    transform: rotate(180deg);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.navroutes.closing {
+    animation: slideUp 0.5s ease forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }

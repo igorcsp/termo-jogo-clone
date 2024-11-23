@@ -20,9 +20,11 @@
   --right-place: #3AA394;
   --right-place-high-constrast: #0197F6;
   --link: #CDB8ED;
+  --dropdown-menu-bg: #222;
 }
 
 * {
+  box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -31,9 +33,9 @@
 
 html,
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: var(--default-font-family);
   font-weight: var(--default-font-weight);
   font-style: var(--default-font-style);
@@ -45,17 +47,4 @@ body {
 h1 {
   margin: 0;
   font-weight: 600;
-}
-
-.capitalize {
-  font-family: var(--capitalized-font-family);
-  font-weight: var(--capitalized-font-weight);
-  font-style: var(--capitalized-font-style);
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }

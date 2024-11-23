@@ -1,5 +1,10 @@
 const Quarteto = () => {
-  return <h1>QUARTETO</h1>;
+  return (
+    <>
+      quarteto page
+      <p>*futuro componente do jogo</p>
+    </>
+  );
 };
 
 export default Quarteto;

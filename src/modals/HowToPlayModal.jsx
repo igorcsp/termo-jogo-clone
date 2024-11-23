@@ -1,5 +1,7 @@
 const HowToPlayModal = () => {
-  return <>HowToPlayModal</>;
+  return (
+    <div>Como jogar</div>
+  );
 };
 
 export default HowToPlayModal;
